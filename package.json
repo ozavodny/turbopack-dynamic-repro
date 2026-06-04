@@ -6,13 +6,13 @@
     "build:webpack": "next build --webpack"
   },
   "dependencies": {
-    "next": "16.2.4",
+    "next": "^16.3.0-canary.40",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/node": "^20",
     "@types/react": "^19",
-    "@types/node": "^20"
+    "typescript": "^5"
   }
 }

@@ -43,10 +43,3 @@ throws from `instantiateModule()` in
 
 Webpack emits a complete chunk graph for the same source and does not have
 this bug.
-
-## Workaround
-
-The parent project ships a `patch-package` patch that, before each
-`requirePage()`, walks `.next/server/chunks/ssr/` and calls `R.c()` for every
-chunk so all factories are installed before the page module evaluates. See
-`patches/next+16.2.4.patch` in the speechify-site repo root.
